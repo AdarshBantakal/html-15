@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:yellow ;
+    font-family:"Space Grotesk", sans-serif ;
+    text-align: center;
+    color: red;
+    margin:0 ;
+    padding: 10px ;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.header-content, .main-content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0  20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.header-content {
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+nav a{
+   
+    color:red;
+}
+nav a:hover {
+    border-bottom: 2px solid black;
+}
+
+/*home css*/
+#home{
+    padding:10% 0;
+}
+
+.profile info{
+    display:flex;
+    align-items: center;
+    gap:10rem;
+}
+
+.text-info {
+    display:flex;
+    justify-content: center;
+}
+    
+
+.text-info h1{
+    border-bottom: 2px solid black;
+}
+.user-bio a{
+    border-bottom: 1px solid black;
+}
+
+.quote-box{
+    padding:16px ;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+/*projects css*/
+project-grid{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:12px;
+
+}
+.project{
+    border: 1px solid black;
+    border-radius:5px ;
+    padding:20px;
+    gap:12px;
+}
+
+.project h3
+project h1{
+    text-align: left;
+
+}
+
+.project p{
+    font-size: 12px;
+}
+
+.project-language{
+    display: flex;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 12px;
+    color:blue;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 16px;
+}
+/*media screen*/
+@media screen and (min-width:1025px){
+    .project-grid{
+        grid-template-columns: repeat(2,1fr);
+
+
+    }
+
+}
+footer{
+    padding: 50ox 0 20px;
+}
